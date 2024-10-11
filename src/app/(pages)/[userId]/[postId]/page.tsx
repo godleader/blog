@@ -22,7 +22,7 @@ type TPostProp = {
   params: { postId: string };
 };
 
-const Page = ({ params }: TPostProp) => {
+const Page = ({ params }) => {
   const dispatch = useAppDispatch();
 
   const { data, isLoading, isError } = useQuery({
@@ -86,10 +86,10 @@ const Page = ({ params }: TPostProp) => {
                             {post.title}
                           </h5>
                           <div className="flex gap-2 mt-2 text-default-500">
-                            <span className="text-sm">#Javascript</span>
-                            <span className="text-sm">#React js</span>
-                            <span className="text-sm">#Next.js</span>
-                            <span className="text-sm">#CSS</span>
+                            <span className="text-sm">#oim</span>
+                            <span className="text-sm">#malaysia</span>
+                            <span className="text-sm">#news</span>
+                            <span className="text-sm">#culture</span>
                           </div>
                         </div>
                       </Link>

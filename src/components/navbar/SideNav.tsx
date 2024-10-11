@@ -1,3 +1,5 @@
+// src/components/SideNav.tsx
+
 import { Button } from "@nextui-org/react";
 import Link from "next/link";
 import React from "react";
@@ -6,6 +8,7 @@ import Icon from "../Icon";
 const SideNav = () => {
   return (
     <nav className="sticky top-[90px] left-0 flex justify-between flex-col h-[calc(100vh_-_110px)]">
+      {/* Navigation Links */}
       <ul>
         {navLinks.map((link) => (
           <li key={link.id}>
@@ -23,11 +26,13 @@ const SideNav = () => {
           </li>
         ))}
       </ul>
+
+      {/* Social Media Links */}
       <ul className="flex justify-between items-center">
         <li>
           <Button
             as={Link}
-            href="https://github.com/tehseen01"
+            href="https://github.com/onlyinmalaysia"
             target="_blank"
             isIconOnly
             variant="light"
@@ -40,7 +45,7 @@ const SideNav = () => {
         <li>
           <Button
             as={Link}
-            href="https://x.com/tehseen_type"
+            href="https://x.com/onlyinmsia"
             target="_blank"
             isIconOnly
             variant="light"
@@ -53,7 +58,7 @@ const SideNav = () => {
         <li>
           <Button
             as={Link}
-            href="https://www.linkedin.com/in/tehseen01/"
+            href="https://www.linkedin.com/company/onlyinmalaysia"
             target="_blank"
             isIconOnly
             variant="light"
@@ -66,7 +71,7 @@ const SideNav = () => {
         <li>
           <Button
             as={Link}
-            href="https://www.instagram.com/tehseen.01/"
+            href="https://www.instagram.com/onlyinmalaysia/"
             target="_blank"
             isIconOnly
             variant="light"
@@ -82,6 +87,8 @@ const SideNav = () => {
 };
 
 export default SideNav;
+
+// src/lib/linkProps.ts
 
 export const navLinks = [
   {
